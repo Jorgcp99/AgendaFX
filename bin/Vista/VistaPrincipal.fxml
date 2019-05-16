@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="394.0" prefWidth="568.0" stylesheets="@../../../Downloads/estilosJavaFX.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.Controller_vistaPrincipal">
+   <children>
+      <Button fx:id="btn_nuevo" layoutX="72.0" layoutY="296.0" mnemonicParsing="false" text="Nuevo" />
+      <Button fx:id="btn_editar" layoutX="234.0" layoutY="296.0" mnemonicParsing="false" onAction="#editarPersona" text="Editar" />
+      <Button fx:id="btn_borrar" layoutX="413.0" layoutY="296.0" mnemonicParsing="false" onAction="#borrarPersona" text="Borrar" />
+      <TableView fx:id="myTable" layoutX="26.0" layoutY="13.0" prefHeight="254.0" prefWidth="513.0">
+         <columns>
+            <TableColumn fx:id="tcNombre" prefWidth="174.0" text="Nombre" />
+            <TableColumn fx:id="tcApellido" prefWidth="185.0" text="Apellido" />
+            <TableColumn fx:id="tcTelefono" prefWidth="149.0" text="Email" />
+         </columns></TableView>
+   </children>
+</AnchorPane>
